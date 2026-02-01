@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>For Golu ❤️</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<script src="./script.js"></script>
+</body>
+</html>
+
+  <!-- Lock Screen -->
+  <div id="lock-screen" class="screen active">
+    <h1>Only Us</h1>
+    <p>For Golu ❤️</p>
+    <input type="password" id="password" placeholder="Something only we know">
+    <button onclick="unlock()">Unlock</button>
+    <p id="error"></p>
+  </div>
+
+  <!-- Main Screen -->
+  <div id="main-screen" class="screen">
+    <h2>Valentine’s Week 💖</h2>
+
+    <div class="days">
+      <div class="day" data-day="1">🌹 Rose Day</div>
+      <div class="day" data-day="2">💌 Propose Day</div>
+      <div class="day" data-day="3">🍫 Chocolate Day</div>
+      <div class="day" data-day="4">🧸 Teddy Day</div>
+      <div class="day" data-day="5">💍 Promise Day</div>
+      <div class="day" data-day="6">🤗 Hug Day</div>
+      <div class="day" data-day="7">💋 Kiss Day</div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal">
+    <div class="modal-content">
+      <span onclick="closeModal()">×</span>
+      <div id="modal-text"></div>
+    </div>
+  </div>
+
+  <!-- Floating Hearts -->
+  <div id="floating-elements"></div>
+
+  <!-- Music -->
+  <audio id="bg-music" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+  <button id="music-btn">🎵 Play Music</button>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

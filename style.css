@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  display: none;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.screen.active {
+  display: block;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 220px;
+  border-radius: 20px;
+  border: none;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  cursor: pointer;
+}
+
+.day-section {
+  display: none;
+}
+
+.day {
+  padding: 15px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.day[data-day="7"] {
+  box-shadow: 0 0 15px rgba(255,77,109,0.8);
+}
+
+#modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #222;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 320px;
+}
+
+#floating-elements {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.float {
+  position: absolute;
+  bottom: -50px;
+  animation: floatUp linear infinite;
+}
+
+#music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.2);
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes floatUp {
+  from {transform: translateY(0);}
+  to {transform: translateY(-110vh);}
+}
