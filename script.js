@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     1: `
 🌹 Rose Day
 
-Golu,
+Panni kutty,
 
 If love had a shape,
 it would look like the calm I feel when I think of you.
@@ -39,7 +39,7 @@ you’re someone I feel at home with.
     2: `
 💌 Propose Day
 
-Golu,
+Panni kutty,
 
 I don’t need big moments or perfect timing.
 I just need you.
@@ -55,7 +55,7 @@ I choose you.
     3: `
 🍫 Chocolate Day
 
-Golu,
+Panni kutty,
 
 There’s a sweetness in the way you care,
 in the way you smile without trying,
@@ -70,7 +70,7 @@ Life is simply sweeter with you.
     4: `
 🧸 Teddy Day
 
-Golu,
+Panni kutty,
 
 This is for the days you feel tired,
 for the moments you doubt yourself,
@@ -86,7 +86,7 @@ I’m here.
     5: `
 💍 Promise Day
 
-Golu,
+Panni kutty,
 
 I promise patience when things are hard.
 I promise honesty, even when it’s not easy.
@@ -99,7 +99,7 @@ I promise love that stays.
     6: `
 🤗 Hug Day
 
-Golu,
+Panni kutty,
 
 Imagine this hug —
 not rushed,
@@ -115,7 +115,7 @@ I’ve got you.”
     7: `
 💋 Kiss Day
 
-Golu,
+Panni kutty,
 
 If I could kiss you right now,
 it would be slow and gentle,
@@ -163,7 +163,7 @@ Always.
       typeWriter(dayMessages[d], modalText, 30, () => {
         if(d == 7) {
           const btn = document.createElement("button");
-          btn.innerText = "Replay the week, Golu ❤️";
+          btn.innerText = "Replay the week, Panni kutty ❤️";
           btn.className = "replay-btn";
           btn.onclick = () => location.reload();
           modalText.appendChild(btn);
@@ -204,3 +204,4 @@ Always.
   };
 
 });
+
